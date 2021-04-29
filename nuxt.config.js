@@ -24,7 +24,7 @@ export default theme({
     'katex/dist/katex.min.css'
   ],
   router: {
-    base: process.env == 'PRODUCTION' ? '/seminar-resources': '/'
+    base: process.env.NODE_ENV == 'production' ? '/seminar-resources': '/'
   },
   head: {
     base: {
