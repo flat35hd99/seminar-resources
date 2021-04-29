@@ -1,4 +1,5 @@
 # seminar-resources
+Open https://flat35hd99.github.io/seminar-resources/
 
 ## Setup
 
