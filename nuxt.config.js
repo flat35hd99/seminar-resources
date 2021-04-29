@@ -28,7 +28,6 @@ export default theme({
   },
   head: {
     base: {
-      href: 'router.base'
     }
   },
   content: {
