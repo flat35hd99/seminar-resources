@@ -26,10 +26,6 @@ export default theme({
   router: {
     base: process.env.NODE_ENV == 'production' ? '/seminar-resources/': '/'
   },
-  head: {
-    base: {
-    }
-  },
   content: {
     markdown: {
       remarkPlugins: [
