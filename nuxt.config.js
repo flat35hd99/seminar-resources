@@ -8,6 +8,14 @@ export default theme({
   css: [
     'katex/dist/katex.min.css'
   ],
+  router: {
+    base: process.env == 'PRODUCTION' ? '/seminar-resources': '/'
+  },
+  head: {
+    base: {
+      href: 'router.base'
+    }
+  },
   content: {
     markdown: {
       remarkPlugins: [
