@@ -1,0 +1,10 @@
+{
+  "title": "seminar-resources",
+  "url": "",
+  "logo": {
+    "light": "/logo-light.svg",
+    "dark": "/logo-dark.svg"
+  },
+  "github": "flat35hd99/seminar-resources",
+  "twitter": "@nuxt_js"
+}
