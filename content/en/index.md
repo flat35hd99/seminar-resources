@@ -1,27 +1,14 @@
 ---
-title: Introduction
+title: ドキュメントの読み方
 description: ''
 position: 1
 category: ''
-features:
-  - Feature 1
-  - Feature 2
-  - Feature 3
 ---
-
-<img src="/preview.png" class="light-img" width="1280" height="640" alt=""/>
-<img src="/preview-dark.png" class="dark-img" width="1280" height="640" alt=""/>
-
-[Module]() for [NuxtJS](https://nuxtjs.org).
 
 <alert type="success">
 
-Your documentation has been created successfully!
+このドキュメントはsgurが適当に作成したリソースを簡単に配布するために用意したものです。このサイト運営者である私は、このサイトのすべての著作権を放棄するとともに、このドキュメントによるすべての利益・不利益に関する責任を放棄します。詳しくはこちらをご確認ください。
 
 </alert>
-
-## Features
-
-<list :items="features"></list>
 
 <p class="flex items-center">Enjoy light and dark mode:&nbsp;<app-color-switcher class="inline-flex ml-2"></app-color-switcher></p>
