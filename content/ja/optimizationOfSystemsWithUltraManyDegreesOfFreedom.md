@@ -1,11 +1,11 @@
 ---
 title: 超多自由度系の最適化p128-p139
-description: ''
+description: 'hogehoge'
 position: 2
 category: '2021SprFri34'
 ---
 
-### カノニカルアンサンブルを再現するシミュレーション手法
+## カノニカルアンサンブルを再現するシミュレーション手法
 
 MD法とMC法に大別されるが、今回はMC法を取り扱う。
 
