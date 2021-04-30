@@ -5,6 +5,7 @@
     "light": "logo-light.svg",
     "dark": "logo-dark.svg"
   },
+  "defaultDir": "",
   "github": "flat35hd99/seminar-resources",
   "twitter": ""
 }
