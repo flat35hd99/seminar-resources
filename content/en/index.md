@@ -1,11 +1,11 @@
 ---
-title: ドキュメントの読み方
-description: ''
+title: About this site
+description: 'セミナー等の資料置き場'
 position: 1
 category: ''
 ---
 
-<alert type="success">
+<alert type="info">
 
 このドキュメントはsgurが適当に作成したリソースを簡単に配布するために用意したものです。このサイト運営者である私は、このサイトのすべての著作権を放棄するとともに、このドキュメントによるすべての利益・不利益に関する責任を放棄します。詳しくは[こちら](https://github.com/flat35hd99/seminar-resources/blob/main/licence)をご確認ください。
 
