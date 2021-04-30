@@ -163,8 +163,60 @@ $\nu$step目までシミュレーションが進み、そのときの状態が$x
 
 ここでは、その中でも簡単な**線形合同法**を紹介する。
 
+<alert type="warning">
+
+本にはこのアルゴリズムの名称が書いていなかったが、別で調べた線形合同の式によく似ているのでこのように記述した。
+
+</alert>
+
 [線形合同法](https://ja.wikipedia.org/wiki/%E7%B7%9A%E5%BD%A2%E5%90%88%E5%90%8C%E6%B3%95)はコンピュータの性質である、オーバーフローを逆手に利用することで簡単に生成することができる。
 
 百聞は一見に如かずなので、実際に試してみる。
 
+<alert type="info">
+
+「じゃあモンテカルロ法もコード書けばいいじゃん」と突っ込んではいけない。その通り。
+
+</alert>
+
 [Google Colab](https://colab.research.google.com/drive/1RZl88ZLopVxv7q80fpmp8wayS_nbmXAS?usp=sharing)でサンプルを作成した。細かい使い方は省略するが、Googleアカウントをもっていれば自分用に複製して好き勝手できるので、どうぞ。
+
+使ったC言語の乱数生成器
+
+```c
+#include <stdio.h>
+#include <float.h>
+#include <stdlib.h>
+double myRandom(int *IX);
+
+void main() {
+  printf("start");
+  FILE *outputfile;
+  int IX = 60001;
+  double r,r1,r2;
+
+  outputfile = fopen("output.txt", "w");
+  if (outputfile == NULL) {
+      printf("cannot open\n");
+      exit(1);
+  }
+  unsigned int count;
+  
+  for (count = 0; count <= 5000000; count = count + 1) {
+    r = myRandom(&IX);
+    fprintf(outputfile, "%u %e\n", count, r);
+    // printf("r%d = %e\n",count,r);
+  }
+  fclose(outputfile);
+  printf("end");
+}
+
+double myRandom(int *IX) {
+  int M = DBL_MAX;     // 2^64 - 1 
+  int K = 30517578125; // 5^15
+  double rand; // random number
+  *IX = ((*IX)*K)&M;
+  rand = (double)*IX/M;
+  return rand;
+}
+```
