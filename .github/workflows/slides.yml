@@ -8,6 +8,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      FILE_NAME: sample2 # Don't put filename extension.
     steps:
       - uses: actions/checkout@v2
       - name: Setup Node
@@ -16,10 +18,10 @@ jobs:
           node-version: '12.x'
       - name: build slide to pdf
         run: |
-          npx @marp-team/marp-cli slides/sample.md --pdf
+          npx @marp-team/marp-cli slides/$FILE_NAME.md --pdf
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          files: slides/sample.pdf
+          files: slides/$FILE_NAME.pdf
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
