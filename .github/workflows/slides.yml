@@ -16,7 +16,7 @@ jobs:
         run: sudo npm install -g @marp-team/marp-cli
       - name: build slide to pdf
         run: |
-          sudo marp ./slides/${{env.FILE_NAME}}.md --pdf
+          marp ./slides/${{env.FILE_NAME}}.md --pdf
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
