@@ -1,33 +1,27 @@
 ---
+marp: true
+page_number: true
 theme: gaia
-_class: lead
 paginate: true
-backgroundColor: #fff
-backgroundImage: url('https://marp.app/assets/hero-background.jpg')
+class: lead
 ---
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
-![bg left:40% 80%](https://marp.app/assets/marp.svg)
+section {
+    font-family: 'Noto Serif', serif;
+}
+</style>
 
-# **Marp**
+<!-- headingDivider: 1 -->
 
-Markdown Presentation Ecosystem
+<!-- #　見出しの前にスライドページを自動的に分割 -->
 
-https://marp.app/
+# 日本語、句読点。漢字。
+- ひらがな
+- カタカナ
+- 漢字
 
----
-
-# How to write slides
-
-Split pages by horizontal ruler (`---`). It's very simple! :satisfied:
-
-```markdown
-# Slide 1
-
-foobar
-
----
-
-# Slide 2
-
-foobar
-```
+# emoji 😊
+- 中央よりなの許せないね
+- なんとかして寄せたい。
