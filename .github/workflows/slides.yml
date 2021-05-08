@@ -12,6 +12,8 @@ jobs:
       FILE_NAME: sample # Don't put filename extension.
     steps:
       - uses: actions/checkout@v2
+      - name: Install font
+        run: sudo apt install fonts-noto
       - name: Install dependencies
         run: sudo npm install -g @marp-team/marp-cli
       - name: build slide to pdf
