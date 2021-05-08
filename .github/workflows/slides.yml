@@ -12,10 +12,11 @@ jobs:
       FILE_NAME: sample # Don't put filename extension.
     steps:
       - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install -g @marp-team/marp-cli
       - name: build slide to pdf
         run: |
-          npx @marp-team/marp-cli slides/$FILE_NAME.md --pdf
-          npx @marp-team/marp-cli slides/${{env.FILE_NAME}}.md --pdf
+          marp slides/${{env.FILE_NAME}}.md --pdf
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
