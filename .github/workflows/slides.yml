@@ -16,8 +16,8 @@ jobs:
           node-version: '12.x'
       - name: build slide to pdf
       - run: |
-        npx @marp-team/marp-cli slides/sample.md --pdf
-        npx @marp-team/marp-cli -o output.pdf
+          npx @marp-team/marp-cli slides/sample.md --pdf
+          npx @marp-team/marp-cli -o output.pdf
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
