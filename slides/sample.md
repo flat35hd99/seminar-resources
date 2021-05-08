@@ -5,13 +5,6 @@ theme: gaia
 paginate: true
 class: lead
 ---
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
-
-section {
-    font-family: 'Noto Serif', serif;
-}
-</style>
 
 <!-- headingDivider: 1 -->
 
