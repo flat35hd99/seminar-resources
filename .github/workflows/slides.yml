@@ -3,7 +3,7 @@ name: publish slides to packages
 on:
   push:
     tags:
-      - 'sl:*'
+      - 'sl.*'
 
 jobs:
   deploy:
