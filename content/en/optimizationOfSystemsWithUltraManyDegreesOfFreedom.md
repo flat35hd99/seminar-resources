@@ -1,7 +1,7 @@
 ---
 title: 超多自由度系の最適化p128-p139
 description: 'hogehoge'
-position: 2
+position: 3
 category: '2021SprFri34'
 ---
 

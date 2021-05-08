@@ -2,7 +2,7 @@
 title: About this site
 description: 'セミナー等の資料置き場'
 position: 1
-category: ''
+category: 'about'
 ---
 
 <alert type="info">
