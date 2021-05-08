@@ -12,13 +12,13 @@ jobs:
       FILE_NAME: sample # Don't put filename extension.
     steps:
       - uses: actions/checkout@v2
-      - name: Setup Node
-        uses: actions/setup-node@v2
-        with:
-          node-version: '12.x'
       - name: build slide to pdf
         run: |
-          npx @marp-team/marp-cli slides/${{env.FILE_NAME}}.md --pdf --lang ja_JP.UTF-8
+          docker run --rm -u root --init -v "$(pwd):/home/marp/app"
+          -e LANG="ja_JP.UTF-8" marpteam/marp-cli slides/${{env.FILE_NAME}}.md
+          --pdf
+          -o slides/${env.FILE_NAME}.pdf
+          --allow-local-files
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
