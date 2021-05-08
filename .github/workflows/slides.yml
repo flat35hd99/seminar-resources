@@ -1,0 +1,25 @@
+name: publish slides to packages
+
+on:
+  push:
+    tags:
+      - 'sl:*'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '12.x'
+      - name: build slide to pdf
+      - run: npx @marp-team/marp-cli slides/sample.md --pdf
+             npx @marp-team/marp-cli -o output.pdf
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: output.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
