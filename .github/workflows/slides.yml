@@ -17,10 +17,9 @@ jobs:
       - name: build slide to pdf
         run: |
           npx @marp-team/marp-cli slides/sample.md --pdf
-          npx @marp-team/marp-cli -o output.pdf
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          files: output.pdf
+          files: slides/sample.pdf
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
