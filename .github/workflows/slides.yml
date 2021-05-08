@@ -2,8 +2,8 @@ name: publish slides to packages
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      'sl.*'
 
 jobs:
   deploy:
