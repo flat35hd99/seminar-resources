@@ -2,8 +2,8 @@ name: publish to github pages
 
 on:
   push:
-    tags:
-      - 'pg.'
+    branched:
+      - 'main'
 
 jobs:
   deploy:
