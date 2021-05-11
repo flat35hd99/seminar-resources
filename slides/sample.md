@@ -1,16 +1,16 @@
 ---
 marp: true
+theme: default
 page_number: true
 paginate: true
 class: lead
 style: |
   section {
-    color: red;
-    align-content: start;
+    background-color: white;
+    color: black;
+    justify-content: normal;
   }
 ---
-
-<!-- headingDivider: 1 -->
 
 # 日本語、句読点。漢字。
 - ひらがな

@@ -20,7 +20,7 @@ jobs:
         run: |
           marp ./slides/${{env.FILE_NAME}}.md
           --pdf
-          --theme https://raw.githubusercontent.com/s10akir/marp-theme/master/themes/moja-simple.css
+          --allow-local-files
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
