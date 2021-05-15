@@ -9,7 +9,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      FILE_NAME: how-to-use-git-and-github.md # Don't put filename extension.
+      FILE_NAME: how_to_use_git_and_github.md # Don't put filename extension.
     steps:
       - uses: actions/checkout@v2
       - name: Install font
