@@ -169,12 +169,12 @@ Next, we will add process to enter a number. It is new feature, so we create new
 3. then, Click `Create branch`
 
 ```
-> git branch feature/random_func
-> git checkout feature/random_func
+> git branch feature/input_repetition
+> git checkout feature/input_repetition
 ```
 or 
 ```
-> git checkout -b feature/random_func
+> git checkout -b feature/input_repetition
 ```
 
 ---
@@ -183,7 +183,7 @@ or
 
 1. Copy and paste this code and save.
 2. Write `commit message`
-3. Commit by clicking `Commit to feature/random_func`
+3. Commit by clicking `Commit to feature/input_repetition`
 
 ---
 
@@ -207,7 +207,7 @@ you can merge from `feature/input_repetition` into `main` but in this exrcise we
 Note: in practice, It's better to merge first, and then create branch.
 
 1. Checkout to main branch.
-2. Create `feature/formatting` branch and checkout to it.
+2. Create `feature/format` branch and checkout to it.
 3. Change code.
    1. `\n` is newline character.
 
@@ -222,7 +222,7 @@ To integrate changes into `main` branch, we use `merge`
 2. Reopen `Current branch` and `Choose a branch to merge into main`
 3. Choose `feature/input_repetetion` and hogehoge
 4. Check that codes is changed.
-5. Repeat process above to merge `feature/formatting` branch's change into `main` branch.
+5. Repeat process above to merge `feature/format` branch's change into `main` branch.
 
 ---
 
@@ -232,8 +232,8 @@ commands (I think you've already noticed, using Git via CLI is simple and easy w
 
 ```
 > git checkout main
-> git merge feature/repetition
-> git merge feature/formatting
+> git merge feature/input_repetition
+> git merge feature/format
 ```
 
 ---
